@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylegrid.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>GRID</title>
+</head>
+
+<body>
+  <h2>O Grid é formado por container, row ( linhas ) e col (colunas) desde que somem um espaço de 12</h2>
+  <h3>Veja abaixo a divisão de como ele se comporta</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">Produto A</div>
+      <div class="col">Produto B</div>
+    </div>
+    <div class="row">
+      <div class="col">Produto C</div>
+      <div class="col">Produto D</div>
+      <div class="col">Produto E</div>
+    </div>
+  </div>
+
+  <p>Podemos numerar as colunas para dividir os tamanhos</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-11"></div>
+    </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+  <p>posso limitar o tamanho dele em relação à pagina</p>
+  <div class="container" id="largura-limitada">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+  <p>O row-cols-2 limita a duas colunas no container, se eu colocar a mais ele sai do container</p>
+  <div class="container">
+    <div class="row row-cols-2">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <h3>Alinhamento Vertical</h3>
+  <p>Nesse os itens ficam alinhados la embaixo por conta do row align-items-end</p>
+
+  <div class="container-vertical">
+    <div class="row align-items-end">
+      <div class="col-6"></div>
+      <div class="col-6"></div>
+    </div>
+  </div>
+  <br>
+  <p>Nesse os itens ficam no centro por conta do row align-items-center</p>
+  <div class="container-vertical">
+    <div class="row align-items-center">
+      <div class="col-6"></div>
+      <div class="col-6"></div>
+    </div>
+    <br>
+    <p>E se não tiver descrição ele automaticamente fica em cima</p>
+    <div class="container-vertical">
+      <div class="row ">
+        <div class="col-6"></div>
+        <div class="col-6"></div>
+      </div>
+    </div>
+
+</body>
+
+</html>

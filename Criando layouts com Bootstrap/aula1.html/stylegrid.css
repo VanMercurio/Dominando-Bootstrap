@@ -1,0 +1,52 @@
+.container {
+  border: 5px dotted magenta;
+  padding: 10px;
+  margin-bottom: 100px;
+
+}
+
+.row {
+  border: 5px solid rgb(211, 61, 86);
+  height: 100px;
+  /*altura*/
+  padding: 10px;
+  margin: 0;
+
+}
+
+.col,
+.col-11,
+.col-1,
+.col-4,
+.col-2,
+.col-6 {
+  border: 2px dotted blue;
+  height: 100%;
+  margin: 0;
+}
+
+#largura-limitada {
+  max-width: 500px;
+}
+
+p {
+  margin: 10%;
+}
+
+.container-vertical {
+  height: 250px;
+
+}
+
+.container-vertical .row {
+  height: 100%;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(199, 230, 219);
+
+}
+
+.col-6 {
+  height: 50px;
+  background-color: aquamarine;
+}

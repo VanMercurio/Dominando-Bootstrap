@@ -1,0 +1,49 @@
+h1 {
+    color: red;
+}
+
+.btn-primary {
+    background-color: blueviolet;
+}
+
+/* tamanho SM */
+
+@media (min-width: 576px) {
+    p {
+        color: yellow;
+    }
+}
+
+/* tamanho MD */
+@media (min-width: 768px) {
+    p {
+        color: rgb(2, 11, 4);
+        font-size: x-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+.container {
+    background-color: bisque;
+}
+
+.container-fluid {
+    background-color: bisque;
+}
+
+/* container breackpoint*/
+
+.container-sm {
+    margin-bottom: 30px;
+    border: 5px solid blue;
+}
+
+.container-md {
+    margin-bottom: 30px;
+    border: 5px solid magenta;
+}
+
+.container-lg {
+    margin-bottom: 30px;
+    border: 5px solid chocolate;
+}
