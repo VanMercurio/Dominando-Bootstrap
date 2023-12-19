@@ -82,7 +82,106 @@
         <div class="col-6"></div>
         <div class="col-6"></div>
       </div>
-    </div>
+      <br>
+      <!-- alinhamento horizontal-->
+      <p><b>Alinhamento horizontal combinado com justify-content-center, ele automaticamente a coluna ficará posicionada
+          à esquerda da row</b></p>
+      <div class="container-vertical">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-3"></div>
+        </div>
+        <p><b>justify-content-end permite ajustar as colunas ao final da row e em cima </b></p>
+        <div class="container-vertical">
+          <div class="row justify-content-end">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+          </div>
+
+          <p><b>justify-content-end combinado com align-items-end permite ajustar as colunas ao final da row e
+              embaixo</b></p>
+          <div class="container-vertical">
+            <div class="row justify-content-end align-items-end">
+              <div class=" col-3"></div>
+              <div class="col-3"></div>
+            </div>
+
+            <!--Alinhamento de item-->
+            <p><b>align-self-center ajusta a coluna para um nivel abaixo </b></p>
+            <div class="container-vertical">
+              <div class="row">
+                <div class="col-3 align-self-center"></div>
+                <div class="col-3"></div>
+                <div class="col-3 align-self-center"></div>
+                <div class="col-3"></div>
+              </div>
+              <p><b>align-self-center ajusta a coluna para um nivel abaixo e align-self-end para o ultimo nivel abaixo
+                </b></p>
+              <div class="container-vertical">
+                <div class="row">
+                  <div class="col-3"></div>
+                  <div class="col-3 align-self-center"></div>
+                  <div class="col-3 align-self-center"></div>
+                  <div class="col-3 align-self-end"></div>
+                </div>
+                <!-- Ordem dos elementos-->
+                <p><b>A order ajusta as cols em ordem mesmo qdo estão posicionadas fora dela e no momento de virar
+                    mobile ele se reajusta mantendo a ordem </b></p>
+                <div class="container-vertical">
+                  <div class="row">
+                    <div class="col-sm-12 col-3 order-3">3</div>
+                    <div class="col-sm-12 col-3 order-1">1</div>
+                    <div class="col-sm-12 col-3 order-4">4</div>
+                    <div class="col-sm-12 col-3 order-2">2</div>
+                  </div>
+                </div>
+                <br><br><br>
+                <!-- OFFSET-->
+                <p><b>O offset permite o espaçamento de uma coluna para a esquerda e de acordo com o numero do
+                    offset-md-** ele da o numero de espaços</b></p>
+                <div class="container-vertical" id="offset">
+                  <div class="row">
+                    <div class="col-md-3 offset-md-1"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 offset-md-2"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 offset-md-3"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 offset-md-4"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 offset-md-5"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 offset-md-6"></div>
+                  </div>
+                </div>
+                <br><br><br>
+                <!--GUTTERS-->
+                <p>Os gutter são intervalos inseridos entre as colunas. Podemos usar gx-2 que são espaços nas
+                  horizontais (padding) ou
+                  gy-2 nas verticais (margens). Usamos rem para tamanho</p>
+                <div class="container" id="gutter">
+                  <div class="row gx-5"><!--permite espaçamento nas laterais-->
+                    <div class="col">
+                      <p>gx</p>
+                    </div>
+                    <div class="col">
+                      <p>gx</p>
+                    </div>
+                    <div class="row gy-4"> <!--permite espaçamento de cima para baixo-->
+                      <div class="col">
+                        <p>gy</p>
+                      </div>
+                      <div class="col">
+                        <p>gy</p>
+                      </div>
+
+                    </div>
+
+                  </div>
 
 </body>
 

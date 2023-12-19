@@ -19,7 +19,8 @@
 .col-1,
 .col-4,
 .col-2,
-.col-6 {
+.col-6,
+.col-3 {
   border: 2px dotted blue;
   height: 100%;
   margin: 0;
@@ -31,6 +32,7 @@
 
 p {
   margin: 10%;
+  font-size: large;
 }
 
 .container-vertical {
@@ -46,7 +48,31 @@ p {
 
 }
 
-.col-6 {
+.col-6,
+.col-3 {
   height: 50px;
   background-color: aquamarine;
+}
+
+#offset .col-md-3 {
+  height: 50px;
+  border: 2px solid red;
+}
+
+#offset {
+  height: auto;
+}
+
+#gutter .row {
+
+  height: 200px;
+}
+
+#gutter .col-6 {
+  margin: auto;
+  height: 50px;
+}
+
+.row p {
+  border: 2px solid green;
 }
